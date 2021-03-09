@@ -58,7 +58,9 @@ int main(int argc, char* argv[]) {
 			stampaTabella();
 
 			// leggo il saluto dell'utente
-			scanf("%s", saluto);
+			fgets(saluto, 80, stdin);
+			// elimino il '\n'
+			saluto[strlen(saluto)-1] = '\0';
 
 			printf("\n\n");
 
